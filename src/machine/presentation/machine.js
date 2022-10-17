@@ -5,13 +5,14 @@ import PropTypes from 'prop-types';
 import Table from '../../common/table';
 
 const MachineView = ({ 
-    editModal, openModal, confirm, buttonRef, onComplete, userRole,
-    machines,  
-    deleteMachine
+    confirm, 
+    deleteMachine, 
+    editModal, 
+    machines, 
+    openModal
 }) => {
-    console.log(deleteMachine);
 
-     const createColumnDefs = [
+    const createColumnDefs = [
         {
             headerName: 'Id',
             field: 'index',
@@ -61,11 +62,10 @@ const MachineView = ({
 };
 
 MachineView.propTypes = {
-    editModal: PropTypes.func,
-    openModal: PropTypes.func,
-    buttonRef: PropTypes.func,
-    onComplete: PropTypes.func,
     confirm: PropTypes.func,
-    userRole: PropTypes.object
+    deleteMachine: PropTypes.func, 
+    editModal: PropTypes.func, 
+    machines: PropTypes.array, 
+    openModal: PropTypes.func
 };
 export default MachineView;

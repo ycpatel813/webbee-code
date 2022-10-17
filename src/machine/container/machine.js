@@ -13,7 +13,6 @@ import MachineView from '../presentation/machine';
 import AddMachineForm from '../presentation/add-machine-form';
 import Confirm from '../../common/confirm';
 import { DELETE_MACHINE_MSG } from '../../utils/helpers/constant';
-import { toast } from '../../utils/toast';
 import { addMachine, deleteMachine } from '../../reducers/machines';
 
 class Machine extends Component {
