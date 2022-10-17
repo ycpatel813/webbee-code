@@ -73,6 +73,7 @@ const AddMachineTypeForm = ({
             const findIndex = updateFields.findIndex(type => _.lowerCase(type.name) === _.lowerCase(property))
             if(findIndex >= 0) {
                 toast.error('Same Property is not allow.');
+                return;
             }
         };
         updateFields.push({ value: attribute, name: property, _id: Math.random().toString(36).slice(2, 10) })
