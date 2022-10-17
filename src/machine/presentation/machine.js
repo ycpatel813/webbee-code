@@ -32,9 +32,9 @@ const MachineView = ({
 
     const RowActionBarComponent = (machine) => {
         return (<React.Fragment>
-            <button type='button' className='btn btn-sm btn-outline-secondary mt-1 mr-1' title='Edit' onClick={() => editModal(machine)}>
+            {/* <button type='button' className='btn btn-sm btn-outline-secondary mt-1 mr-1' title='Edit' onClick={() => editModal(machine)}>
                 <i className='fa fa-edit pointer'></i>
-            </button>
+            </button> */}
             <button type='button'
                 className='btn btn-sm btn-outline-danger mt-1'
                 onClick={() => confirm(deleteMachine)}
